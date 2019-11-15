@@ -91,6 +91,10 @@ app.post('/degregister', function(req,res){
 	  return res.sendFile(__dirname + "/views/success.html"); 
 });
 
+app.get('/feature',function(req,res){
+	 return res.sendFile(__dirname + "/views/feaute.html");
+});
+
 const port = process.env.PORT || process.env.VCAP_APP_PORT || 3001;
 app.listen(port, function () {
     console.log("Server running on port: %d", port);
