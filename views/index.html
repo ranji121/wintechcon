@@ -42,6 +42,11 @@
 			document.getElementById("fieldproject1").required = false;
 		}
 		
+		function Showbox()
+		{
+			document.getElementById('otherDiv').style.display = "none";
+			document.getElementById("otherProj").required = true;
+		}
 	</script>
 </head>
 
@@ -142,6 +147,7 @@ color: darkblue
 						<!--<h6>Predict loan defaulters and how capable each applicant is of repaying a loan back to a bank</h6> -->
 					</div>
 					<br/>
+					<div id="otherDiv" ><input type="text"></input></div>
 				</div>
 				<div class="col-md-6 col-md-offset-3">
 			<input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">
